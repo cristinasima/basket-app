@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ItemsDataService {
 
+  totalCartValue: number | undefined;
   private jsonUrl: string;
 
 
@@ -17,6 +18,11 @@ export class ItemsDataService {
 
   getItems() {
     return this.http.get<any>(this.jsonUrl);
+  }
+
+
+  setCartValue(value: number) {
+    this.totalCartValue = value;
   }
 
 }

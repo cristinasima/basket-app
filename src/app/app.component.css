@@ -20,3 +20,8 @@
   width: 300px;
   border: 1px solid gainsboro;
 }
+
+.show-cart {
+  color: red;
+  font-weight: 600;
+}
