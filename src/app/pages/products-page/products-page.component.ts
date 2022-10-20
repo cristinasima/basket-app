@@ -9,18 +9,25 @@ import { ItemsDataService } from "../../services/items-data.service";
 export class ProductsPageComponent {
 
   products: Array<any>;
+  cartItems: Array<any>;
 
 
   constructor(private httpConfigService: ItemsDataService) {
     this.products = [];
+    this.cartItems = [];
     this.getProducts();
   }
 
 
-  getProducts() {
+  addItemToCart(item: any) {
+    this.cartItems.push(item);
+  }
+
+
+  private getProducts() {
     this.httpConfigService.getItems()
       .subscribe((response: any) => {
-        this.products = response.toDoList
+        this.products = response.items
       });
   }
 

@@ -1,1 +1,6 @@
-test
+<div class="items-list">
+  <div class="item" *ngFor="let item of products">
+    <div>{{item.name}}</div>
+    <div class="add-button" (click)="addItemToCart(item)">Add to cart</div>
+  </div>
+</div>

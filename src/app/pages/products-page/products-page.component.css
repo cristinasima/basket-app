@@ -1,0 +1,13 @@
+.item {
+  padding: 15px;
+  border: 1px solid gainsboro;
+  margin-bottom: 8px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-button {
+  cursor: pointer;
+  text-transform: uppercase;
+}
