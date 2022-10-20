@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "identifier": "A",
+      "standardPrice": 50,
+      "activeOffer": true,
+      "quantityOffer": 3,
+      "priceOffer": 130
+    },
+    {
+      "id": 2,
+      "identifier": "B",
+      "standardPrice": 30,
+      "activeOffer": true,
+      "quantityOffer": 2,
+      "priceOffer": 45
+    },
+    {
+      "id": 3,
+      "identifier": "C",
+      "standardPrice": 20,
+      "activeOffer": false
+    },
+    {
+      "id": 4,
+      "identifier": "D",
+      "standardPrice": 15,
+      "activeOffer": false
+    }
+  ]
+}
